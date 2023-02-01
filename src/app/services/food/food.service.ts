@@ -35,7 +35,7 @@ export class FoodService {
       },
       {
         id: 3,
-        name: 'Hamburger',
+        name: 'hamburger',
         price: 5,
         cooktime: '10-15',
         favorite: false,
