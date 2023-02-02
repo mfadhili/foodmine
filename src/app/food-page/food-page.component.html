@@ -12,7 +12,7 @@
       <span *ngFor="let origin of food.origins">{{origin}}</span>
     </div>
     <div class="tags">
-      <app-tags [foodPageTags]="food.tags"></app-tags>
+      <app-tags [foodPageTags]="food.tags" JustifyContent="start"></app-tags>
     </div>
     <div class="cook-time">
       <span>Time to cook about <strong>{{food.cooktime}}</strong> minutes</span>

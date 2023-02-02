@@ -11,6 +11,8 @@ export class TagsComponent {
   @Input()
   foodPageTags?:string[];
 
+  @Input()
+  JustifyContent:string = 'center';
   tags?: Tag[];
 
 
