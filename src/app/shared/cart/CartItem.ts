@@ -7,10 +7,11 @@ export class CartItem{
 
   constructor(food: Food) {
     this.food = food;
+    this.quantity = 1;
   }
 
   get price():number{
-    return this.food.price *this.quantity;
+    return this.food.price *  this.quantity;
   }
 
 }
