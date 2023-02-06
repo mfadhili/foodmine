@@ -1,4 +1,5 @@
-<div class="container">
+<app-not-found [visible]="!food" notFoundMessage="That's not on our menu" resetLinkText="but check whats there"></app-not-found>
+<div class="container" *ngIf="food">
   <img [src]="food.imageUrl" [alt]="food.name">
   <div class="details">
     <div class="header">
