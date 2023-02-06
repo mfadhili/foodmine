@@ -28,9 +28,9 @@ export class CartService {
   }
 
   changeQuantity(foodId:number, quantity:number){
-    let cartIem = this.cart.items.find(item => item.food.id === foodId)
-    if(!cartIem) return;
-    cartIem.quantity = quantity;
+    let cartItem = this.cart.items.find((item) => item.food.id === foodId)
+    if(!cartItem) return;
+    cartItem.quantity = quantity;
   }
 
   getCart():Cart{

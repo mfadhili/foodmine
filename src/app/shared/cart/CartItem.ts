@@ -2,12 +2,11 @@ import {Food} from "../food/food";
 
 export class CartItem{
   food: Food;
-  quantity: number;
+  quantity: number = 1;
 
 
   constructor(food: Food) {
     this.food = food;
-    this.price;
   }
 
   get price():number{
